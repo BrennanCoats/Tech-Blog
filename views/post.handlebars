@@ -1,0 +1,16 @@
+<section class="container">
+  <h3 class="gallery-name">{{post.title}}</h3>
+  <p>{{post.content}}</p>
+  <section class="flex-row justify-center">
+    {{#each post.comments as |comment|}}
+    <section class="card">
+      <a href="/comment/{{id}}">
+        <div class="card-body">
+          <p>{{content}}</p>
+          <p>By: {{id}}</p>
+        </div>
+      </a>
+    </section>
+    {{/each}}
+  </section>
+</section>
